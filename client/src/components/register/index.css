@@ -1,0 +1,120 @@
+.RegistrationPageContainer {
+    background-color: #bbe0cc50;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.RegistrationPageContainer .registrationForm {
+    margin-top: 40px;
+    height: 500px;
+    width: 330px;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+}
+
+.RegistrationPageContainer .emailCode {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 8px;
+    background-color: white;
+    width: 40%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+
+.emailCode h2 {
+    margin: 5% 0 0 0;
+    padding: 0;
+    font-size:  80px;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.emailCode p {
+    text-align: center;
+    margin: 0 5%;
+    padding: 0;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.emailCode input {
+    height: 25%;
+    margin-top: 5%;
+    border-radius: 10px;
+    outline: 0;
+    background-size: 80px 1px;
+    border: 0;
+    background: linear-gradient(to left, #ccc 1px, transparent 0);
+    background-size: 80px 1px;
+    font: 80px monaco, monospace;
+    width: 68%;
+    letter-spacing: 35px;
+    text-indent: 15px;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 8px;
+}
+
+.emailCode hr {
+    display: none;
+    position: absolute;
+    top: 84.1%;
+    width: 70px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #0c1150;
+}
+
+.RegistrationPageContainer-input1 {
+    text-decoration: none solid rgb(33, 37, 41);
+    border: solid #ced4da 1px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin: 0 0 -1px 0;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+}
+
+.RegistrationPageContainer-input2 {
+    text-decoration: none solid rgb(33, 37, 41);
+    border: solid #ced4da 1px;
+    margin: 0 0 -1px 0;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+}
+
+.RegistrationPageContainer-input3 {
+    text-decoration: none solid rgb(33, 37, 41);
+    border: solid #ced4da 1px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin: 0 0 -1px 0;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+}
+
+.registrationForm button {
+    margin-top: 20px;
+    width: 279px;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 8px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none solid white;
+    background-color: #0d6efd;
+    font-size: 25px;
+    color: white;
+}
+

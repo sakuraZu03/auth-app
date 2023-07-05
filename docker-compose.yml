@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  db:
+    container_name: db
+    image: 'postgres:14-alpine'
+    environment:
+      POSTGRES_PASSWORD: eldoseldos
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - '5432:5432'
+    restart: always
+  api-server:
+    environment:
+      - apiKey=secretAPiKey
+      - apiPort=8050
+    env_file:
+      - api-server/.env
+    container_name: api-server
+    build:
+      dockerfile: Dockerfile
+      context: 'api-server'
+    volumes:
+      - /app/node_modules
+      - ./api-server:/app
+    ports:
+      - "8080:8080"
