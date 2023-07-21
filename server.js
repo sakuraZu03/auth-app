@@ -35,7 +35,6 @@ app.use((err, req, res, next) => {
 const port = process.env.apiPort || 8000
 
 const server = app.listen(port, async () => {
-  console.log(`http://localhost:${port}/${process.env.apiKey}`, process.env.apiPort)
   console.log(`Example app listening on port ${port}`)
 })
 

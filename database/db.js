@@ -1,13 +1,13 @@
-import { Pool } from 'pg'
+const pg = require('pg')
 
 require('dotenv').config()
 
-const db = new Pool({
+const db = new pg.Pool({
   user: process.env.PG_USER,
   password: process.env.PG_PASSWORD,
   host: process.env.PG_HOST,
   port: process.env.PG_PORT,
-  database:  process.env.PG_DATABASE,
+  database: process.env.PG_DATABASE,
 })
 
-export default db
+exports.db
